@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-#Code by V.Barbosa
+# Code by V.Barbosa
 
 def enviar_email(destinatario, assunto, corpo, remetente, servidor_smtp, porta, usuario, senha):
     # Configurar o e-mail
