@@ -2,8 +2,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-# Code by V.Barbosa
-
 def enviar_email(destinatario, assunto, corpo, remetente, servidor_smtp, porta, usuario, senha):
     # Configurar o e-mail
     mensagem = MIMEMultipart()
@@ -18,16 +16,16 @@ def enviar_email(destinatario, assunto, corpo, remetente, servidor_smtp, porta, 
     with smtplib.SMTP(servidor_smtp, porta) as server:
         server.starttls()
         server.login(usuario, senha)
-        server.send_message(mensagem)
+        server.sendmail(remetente, destinatario, mensagem.as_string())
 
-# Exemplo de uso
-destinatario = 'destinatario@asdasd.com'
-assunto = 'Assunto'
-corpo = 'Corpo (texto)'
-remetente = 'E-mail spoofado'
-servidor_smtp = 'exemplo.smtp.com'
-porta = 587
-usuario = 'seu_usuario'
-senha = 'sua_senha'
+# Exemplo de uso com Mailtrap
+destinatario = 'vitima@vitima.com'
+assunto = 'TESTE'
+corpo = 'TESTE'
+remetente = 'mailtrap e-mail'  # Substitua pelo seu endereço Mailtrap
+servidor_smtp = 'smtp.mailtrap.io'  # Servidor SMTP do Mailtrap
+porta = 587  # Porta do Mailtrap
+usuario = '*********'  # Substitua pelo seu usuário Mailtrap
+senha = '**********'  # Substitua pela sua senha Mailtrap
 
 enviar_email(destinatario, assunto, corpo, remetente, servidor_smtp, porta, usuario, senha)
