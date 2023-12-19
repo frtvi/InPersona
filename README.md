@@ -1,5 +1,5 @@
 # InPersona
-E-mail spoofing com python
+E-mail spoofing com python ou powershell.
 
 # Nota Legal
 
