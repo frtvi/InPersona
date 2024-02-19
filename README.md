@@ -1,5 +1,6 @@
 # InPersona
-E-mail spoofing com python ou powershell.
+Ataque de E-mail Spoofing com python.
+(Se trata apenas de um teste realiado com a ferramente MailTrap, para estudar o ataque e saber como funciona)
 
 # Nota Legal
 
