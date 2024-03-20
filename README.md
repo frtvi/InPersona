@@ -1,6 +1,6 @@
 # InPersona
 Ataque de E-mail Spoofing com python.
-(Se trata apenas de um teste realiado com a ferramente MailTrap, para estudar o ataque e saber como funciona)
+(Se trata apenas de um teste realiado com a ferramenta MailTrap, para estudar o ataque e saber como funciona)
 
 # Nota Legal
 
